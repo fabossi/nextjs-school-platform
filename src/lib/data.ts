@@ -421,7 +421,7 @@ export const classesData = [
     supervisor: "Iva Frank",
   },
   {
-    id: 5,
+    id: 6,
     name: "5B",
     capacity: 20,
     grade: 5,
@@ -915,50 +915,55 @@ export const announcementsData = [
   },
 ];
 
+const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth(); // Lembre-se que os meses são baseados em zero (0-11)
+const day = today.getDate();
 
 // YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(year, month, day, 8, 0), // 8:00 AM
+    end: new Date(year, month, day, 8, 45), // 8:45 AM
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(year, month, day, 9, 0), // 9:00 AM
+    end: new Date(year, month, day, 9, 45), // 9:45 AM
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: new Date(year, month, day, 10, 0), // 10:00 AM
+    end: new Date(year, month, day, 10, 45), // 10:45 AM
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
+    start: new Date(year, month, day, 11, 0), // 11:00 AM
+    end: new Date(year, month, day, 11, 45), // 11:45 AM
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
+    start: new Date(year, month, day, 13, 0), // 1:00 PM
+    end: new Date(year, month, day, 13, 45), // 1:45 PM
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
+    start: new Date(year, month, day, 14, 0), // 2:00 PM
+    end: new Date(year, month, day, 14, 45), // 2:45 PM
   },
+  // Outros eventos podem ser mantidos ou ajustados para os próximos dias
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
+    start: new Date(year, month, day + 1, 9, 0), // 9:00 AM do dia seguinte
+    end: new Date(year, month, day + 1, 9, 45), // 9:45 AM do dia seguinte
   },
   {
     title: "Biology",
