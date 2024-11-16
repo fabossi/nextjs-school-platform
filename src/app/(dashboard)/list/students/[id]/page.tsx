@@ -87,7 +87,7 @@ const SingleUserPage = () => {
                     <h1 className="text-xl font-semibold">Shortcuts</h1>
                     <div className="mt-4 gap-3 xl:gap-2 flex flex-wrap text-xs text-gray-500 w-full">
                         <Link className="p-3 rounded-md bg bg-fabossiSkyeLight" href={'/'}>Student&apos;s Lessons</Link>
-                        <Link className="p-3 rounded-md bg-fabossiPurpleLight" href={'/'}>Student&apos;s Teachers</Link>
+                        <Link href={`/list/teachers?classId=${2}`} className="p-3 rounded-md bg-fabossiPurpleLight">Student&apos;s Teachers</Link>
                         <Link className="p-3 rounded-md bg-pink-50" href={'/'}>Student&apos;s Exams</Link>
                         <Link className="p-3 rounded-md bg-fabossiSkyeLight" href={'/'}>Student&apos;s Assignments</Link>
                         <Link className="p-3 rounded-md bg-fabossiSkyeLight" href={'/'}>Student&apos;s Results</Link>
